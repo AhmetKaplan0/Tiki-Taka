@@ -1,0 +1,3031 @@
+{
+  "entities": [
+    {
+      "name": "AppConfig",
+      "displayName": "AppConfig",
+      "entityTypeId": 0,
+      "entityType": "Entity",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "fields": [
+        {
+          "id": "60383f69-536f-f111-ac9b-000d3a68f6f7",
+          "name": "FileName",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "NVARCHAR",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "FileName",
+          "description": "",
+          "createTime": "2026-06-23T22:32:27.527Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-23T22:32:27.527Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "61383f69-536f-f111-ac9b-000d3a68f6f7",
+          "name": "File",
+          "isPrimaryKey": false,
+          "isForeignKey": true,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceName": "fk_File_75d5a5d3-b8eb-451b-a66d-f7a9f1488269",
+          "referenceEntity": {
+            "name": "EntityAttachment",
+            "displayName": "EntityAttachment",
+            "entityTypeId": 2,
+            "entityType": "InternalEntity",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "079d85be-0b6c-f111-8fcb-000d3ab36606"
+          },
+          "referenceField": {
+            "id": "4376cc40-2711-4852-b738-51ff4167a13f",
+            "definition": {
+              "id": "4376cc40-2711-4852-b738-51ff4167a13f",
+              "name": "Name",
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "isExternalField": false,
+              "isHiddenField": false,
+              "fieldCategoryId": 0,
+              "isUnique": false,
+              "referenceType": "ManyToOne",
+              "sqlType": {
+                "name": "NVARCHAR",
+                "lengthLimit": 4000
+              },
+              "isRequired": false,
+              "isEncrypted": false,
+              "displayName": "Name",
+              "createTime": "2026-06-19T18:21:55.95Z",
+              "updateTime": "2026-06-19T18:21:55.95Z",
+              "isSystemField": false,
+              "isAttachment": false,
+              "isRbacEnabled": false,
+              "isModelReserved": false
+            }
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "UNIQUEIDENTIFIER"
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "File",
+          "description": "",
+          "createTime": "2026-06-23T22:32:27.55Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-23T22:32:27.55Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "File",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        }
+      ],
+      "recordCount": 0,
+      "isRbacEnabled": false,
+      "isInsightsEnabled": false,
+      "invalidIdentifiers": [],
+      "isModelReserved": false,
+      "id": "56383f69-536f-f111-ac9b-000d3a68f6f7",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-23T22:32:27.39Z",
+      "updateTime": "2026-06-23T22:32:27.55Z",
+      "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3"
+    },
+    {
+      "name": "Match",
+      "displayName": "Match",
+      "entityTypeId": 0,
+      "entityType": "Entity",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "fields": [
+        {
+          "id": "b85e049a-076c-f111-8fcb-000d3ab36606",
+          "name": "MatchDate",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "DATE",
+            "lengthLimit": 1000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "MatchDate",
+          "description": "",
+          "createTime": "2026-06-19T17:52:23.28Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T17:52:23.28Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "674571ed-106c-f111-8fcb-000d3ab36606",
+          "name": "HomeTeam",
+          "isPrimaryKey": false,
+          "isForeignKey": true,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceName": "fk_HomeTeam_73989592-9f0f-4bde-ae45-490f529344be",
+          "referenceEntity": {
+            "name": "TeamEntity",
+            "displayName": "Team",
+            "entityTypeId": 0,
+            "entityType": "Entity",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "64f63e06-036c-f111-8fcb-000d3ab36606"
+          },
+          "referenceField": {
+            "id": "6ff63e06-036c-f111-8fcb-000d3ab36606",
+            "definition": {
+              "id": "6ff63e06-036c-f111-8fcb-000d3ab36606",
+              "name": "TeamName",
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "isExternalField": false,
+              "isHiddenField": false,
+              "fieldCategoryId": 0,
+              "isUnique": false,
+              "referenceType": "ManyToOne",
+              "sqlType": {
+                "name": "NVARCHAR",
+                "lengthLimit": 200
+              },
+              "isRequired": false,
+              "isEncrypted": false,
+              "displayName": "TeamName",
+              "createTime": "2026-06-19T17:19:28.227Z",
+              "updateTime": "2026-06-19T17:19:28.227Z",
+              "isSystemField": false,
+              "isAttachment": false,
+              "isRbacEnabled": false,
+              "isModelReserved": false
+            }
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "UNIQUEIDENTIFIER",
+            "lengthLimit": 300
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "HomeTeam",
+          "description": "",
+          "createTime": "2026-06-19T18:58:59.407Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T18:58:59.407Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "Relationship",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "694571ed-106c-f111-8fcb-000d3ab36606",
+          "name": "AwayTeam",
+          "isPrimaryKey": false,
+          "isForeignKey": true,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceName": "fk_AwayTeam_a7c6ccef-8a4d-47e0-a616-2a9aff3b9980",
+          "referenceEntity": {
+            "name": "TeamEntity",
+            "displayName": "Team",
+            "entityTypeId": 0,
+            "entityType": "Entity",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "64f63e06-036c-f111-8fcb-000d3ab36606"
+          },
+          "referenceField": {
+            "id": "6ff63e06-036c-f111-8fcb-000d3ab36606",
+            "definition": {
+              "id": "6ff63e06-036c-f111-8fcb-000d3ab36606",
+              "name": "TeamName",
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "isExternalField": false,
+              "isHiddenField": false,
+              "fieldCategoryId": 0,
+              "isUnique": false,
+              "referenceType": "ManyToOne",
+              "sqlType": {
+                "name": "NVARCHAR",
+                "lengthLimit": 200
+              },
+              "isRequired": false,
+              "isEncrypted": false,
+              "displayName": "TeamName",
+              "createTime": "2026-06-19T17:19:28.227Z",
+              "updateTime": "2026-06-19T17:19:28.227Z",
+              "isSystemField": false,
+              "isAttachment": false,
+              "isRbacEnabled": false,
+              "isModelReserved": false
+            }
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "UNIQUEIDENTIFIER",
+            "lengthLimit": 300
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "AwayTeam",
+          "description": "",
+          "createTime": "2026-06-19T18:58:59.473Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T18:58:59.473Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "Relationship",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "a261c79e-116c-f111-8fcb-000d3ab36606",
+          "name": "MatchName",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "NVARCHAR",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "MatchName",
+          "description": "",
+          "createTime": "2026-06-19T19:03:56.93Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T19:03:56.93Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "5f88a506-156c-f111-8fcb-000d3ab36606",
+          "name": "HomeFormation",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "Formation",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "ade87a93-036c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "HomeFormation",
+          "description": "",
+          "createTime": "2026-06-19T19:28:19.68Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T19:28:19.68Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "ade87a93-036c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "6088a506-156c-f111-8fcb-000d3ab36606",
+          "name": "AwayFormation",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "Formation",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "ade87a93-036c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "AwayFormation",
+          "description": "",
+          "createTime": "2026-06-19T19:28:19.707Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T19:28:19.707Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "ade87a93-036c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "6188a506-156c-f111-8fcb-000d3ab36606",
+          "name": "WeatherCondition",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "WeatherCondition",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "6e5220d8-146c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "WeatherCondition",
+          "description": "",
+          "createTime": "2026-06-19T19:28:19.72Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T19:28:19.72Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "6e5220d8-146c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "6288a506-156c-f111-8fcb-000d3ab36606",
+          "name": "PitchCondition",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "PitchConditionChoices",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "223d8bfb-146c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "PitchCondition",
+          "description": "",
+          "createTime": "2026-06-19T19:28:19.737Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T19:28:19.737Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "223d8bfb-146c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "15ae9e4f-156c-f111-8fcb-000d3ab36606",
+          "name": "HomeTeamGoals",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "DECIMAL",
+            "lengthLimit": 1000,
+            "maxValue": 20,
+            "minValue": -1,
+            "decimalPrecision": 0
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "HomeTeamGoals",
+          "description": "",
+          "createTime": "2026-06-19T19:30:27.8Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T19:39:51.493Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "16ae9e4f-156c-f111-8fcb-000d3ab36606",
+          "name": "AwayTeamGoals",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "DECIMAL",
+            "lengthLimit": 1000,
+            "maxValue": 20,
+            "minValue": -1,
+            "decimalPrecision": 0
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "AwayTeamGoals",
+          "description": "",
+          "createTime": "2026-06-19T19:30:27.82Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T19:39:51.5Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "583d9190-166c-f111-8fcb-000d3ab36606",
+          "name": "AwayTeamPressingLevel",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "PressingLevel",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "e4b38f09-046c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "AwayTeamPressingLevel",
+          "description": "",
+          "createTime": "2026-06-19T19:39:20.57Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T19:39:20.57Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "e4b38f09-046c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "593d9190-166c-f111-8fcb-000d3ab36606",
+          "name": "HomeTeamPressingLevel",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "PressingLevel",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "e4b38f09-046c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "HomeTeamPressingLevel",
+          "description": "",
+          "createTime": "2026-06-19T19:39:20.587Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T19:39:20.587Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "e4b38f09-046c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "5a3d9190-166c-f111-8fcb-000d3ab36606",
+          "name": "HomeTeamAttackFocus",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "AttackFocus",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "113eefde-036c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "HomeTeamAttackFocus",
+          "description": "",
+          "createTime": "2026-06-19T19:39:20.6Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T19:39:20.6Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "113eefde-036c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "5b3d9190-166c-f111-8fcb-000d3ab36606",
+          "name": "AwayTeamAttackFocus",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "AttackFocus",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "113eefde-036c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "AwayTeamAttackFocus",
+          "description": "",
+          "createTime": "2026-06-19T19:39:20.61Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T19:39:20.61Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "113eefde-036c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        }
+      ],
+      "recordCount": 0,
+      "isRbacEnabled": false,
+      "isInsightsEnabled": false,
+      "invalidIdentifiers": [],
+      "isModelReserved": false,
+      "id": "a95e049a-076c-f111-8fcb-000d3ab36606",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-19T17:52:23.127Z",
+      "updateTime": "2026-06-23T20:22:30.23Z",
+      "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c"
+    },
+    {
+      "name": "OpponentAnalysis",
+      "displayName": "OpponentAnalysis",
+      "entityTypeId": 0,
+      "entityType": "Entity",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "fields": [
+        {
+          "id": "e0dd27b7-046c-f111-8fcb-000d3ab36606",
+          "name": "Strengths",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "MULTILINE",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "Strengths",
+          "description": "",
+          "createTime": "2026-06-19T17:31:35.63Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T17:31:35.63Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "e1dd27b7-046c-f111-8fcb-000d3ab36606",
+          "name": "Weaknesses",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "MULTILINE",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "Weaknesses",
+          "description": "",
+          "createTime": "2026-06-19T17:31:35.643Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T17:31:35.643Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "e2dd27b7-046c-f111-8fcb-000d3ab36606",
+          "name": "KeyPlayers",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "MULTILINE",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "KeyPlayers",
+          "description": "",
+          "createTime": "2026-06-19T17:31:35.657Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T17:31:35.657Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "e3dd27b7-046c-f111-8fcb-000d3ab36606",
+          "name": "ExploitableZones",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "MULTILINE",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "ExploitableZones",
+          "description": "",
+          "createTime": "2026-06-19T17:31:35.673Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T17:31:35.673Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "e4dd27b7-046c-f111-8fcb-000d3ab36606",
+          "name": "MainThreats",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "MULTILINE",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "MainThreats",
+          "description": "",
+          "createTime": "2026-06-19T17:31:35.683Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T17:31:35.683Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "e5dd27b7-046c-f111-8fcb-000d3ab36606",
+          "name": "OpponentRiskScore",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "DECIMAL",
+            "lengthLimit": 1000,
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000,
+            "decimalPrecision": 2
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "OpponentRiskScore",
+          "description": "",
+          "createTime": "2026-06-19T17:31:35.697Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T17:31:35.697Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "e6dd27b7-046c-f111-8fcb-000d3ab36606",
+          "name": "AnalysisSummary",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "MULTILINE",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "AnalysisSummary",
+          "description": "",
+          "createTime": "2026-06-19T17:31:35.707Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T17:31:35.707Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "4d186ce7-056c-f111-8fcb-000d3ab36606",
+          "name": "MainFormation",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "Formation",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "ade87a93-036c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "MainFormation",
+          "description": "",
+          "createTime": "2026-06-19T17:40:05.74Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T17:40:05.74Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "ade87a93-036c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "66823df9-086c-f111-8fcb-000d3ab36606",
+          "name": "MatchId",
+          "isPrimaryKey": false,
+          "isForeignKey": true,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceName": "fk_MatchId_56a8ec71-b1b6-4c3b-bd91-a349504f0ef2",
+          "referenceEntity": {
+            "name": "Match",
+            "displayName": "Match",
+            "entityTypeId": 0,
+            "entityType": "Entity",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "a95e049a-076c-f111-8fcb-000d3ab36606"
+          },
+          "referenceField": {
+            "id": "d4def600-c582-40fd-8079-93eef089acc5",
+            "definition": {
+              "id": "d4def600-c582-40fd-8079-93eef089acc5",
+              "name": "Id",
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "isExternalField": false,
+              "isHiddenField": false,
+              "fieldCategoryId": 0,
+              "isUnique": false,
+              "referenceType": "ManyToOne",
+              "sqlType": {
+                "name": "UNIQUEIDENTIFIER"
+              },
+              "isRequired": false,
+              "isEncrypted": false,
+              "displayName": "Id",
+              "createTime": "2026-06-19T17:52:23.143Z",
+              "updateTime": "2026-06-19T17:52:23.143Z",
+              "isSystemField": false,
+              "isAttachment": false,
+              "isRbacEnabled": false,
+              "isModelReserved": false
+            }
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "UNIQUEIDENTIFIER",
+            "lengthLimit": 300
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "MatchId",
+          "description": "",
+          "createTime": "2026-06-19T18:02:03.227Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T18:02:03.227Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "fieldDisplayType": "Relationship",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "b9466009-166c-f111-8fcb-000d3ab36606",
+          "name": "MatchStatus",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "MatchStatus",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "9c5e049a-076c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "MatchStatus",
+          "description": "",
+          "createTime": "2026-06-19T19:35:33.757Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T19:35:33.757Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "9c5e049a-076c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "ba466009-166c-f111-8fcb-000d3ab36606",
+          "name": "MatchObjective",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "MatchObjective",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "a6a2b673-076c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "MatchObjective",
+          "description": "",
+          "createTime": "2026-06-19T19:35:33.793Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T19:35:33.793Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "a6a2b673-076c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        }
+      ],
+      "recordCount": 0,
+      "isRbacEnabled": false,
+      "isInsightsEnabled": false,
+      "invalidIdentifiers": [],
+      "isModelReserved": false,
+      "id": "d5dd27b7-046c-f111-8fcb-000d3ab36606",
+      "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "createTime": "2026-06-19T17:31:35.54Z",
+      "updateTime": "2026-06-23T20:22:30.23Z",
+      "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c"
+    },
+    {
+      "name": "Player",
+      "displayName": "Player",
+      "entityTypeId": 0,
+      "entityType": "Entity",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "fields": [
+        {
+          "id": "225634fb-f36f-f111-ac9b-000d3a68f6f7",
+          "name": "PlayerImage",
+          "isPrimaryKey": false,
+          "isForeignKey": true,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceName": "fk_PlayerImage_46015cbb-8bb8-441a-b163-a04fb9045ce9",
+          "referenceEntity": {
+            "name": "EntityAttachment",
+            "displayName": "EntityAttachment",
+            "entityTypeId": 2,
+            "entityType": "InternalEntity",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "079d85be-0b6c-f111-8fcb-000d3ab36606"
+          },
+          "referenceField": {
+            "id": "4376cc40-2711-4852-b738-51ff4167a13f",
+            "definition": {
+              "id": "4376cc40-2711-4852-b738-51ff4167a13f",
+              "name": "Name",
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "isExternalField": false,
+              "isHiddenField": false,
+              "fieldCategoryId": 0,
+              "isUnique": false,
+              "referenceType": "ManyToOne",
+              "sqlType": {
+                "name": "NVARCHAR",
+                "lengthLimit": 4000
+              },
+              "isRequired": false,
+              "isEncrypted": false,
+              "displayName": "Name",
+              "createTime": "2026-06-19T18:21:55.95Z",
+              "updateTime": "2026-06-19T18:21:55.95Z",
+              "isSystemField": false,
+              "isAttachment": false,
+              "isRbacEnabled": false,
+              "isModelReserved": false
+            }
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "UNIQUEIDENTIFIER"
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "PlayerImage",
+          "description": "",
+          "createTime": "2026-06-24T17:41:51.743Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-24T17:41:51.743Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "File",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "611e0eaf-066c-f111-8fcb-000d3ab36606",
+          "name": "TeamId",
+          "isPrimaryKey": false,
+          "isForeignKey": true,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceName": "fk_TeamId_fd03f604-6412-4fcb-bcca-b430bab3abe7",
+          "referenceEntity": {
+            "name": "TeamEntity",
+            "displayName": "Team",
+            "entityTypeId": 0,
+            "entityType": "Entity",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "64f63e06-036c-f111-8fcb-000d3ab36606"
+          },
+          "referenceField": {
+            "id": "6ff63e06-036c-f111-8fcb-000d3ab36606",
+            "definition": {
+              "id": "6ff63e06-036c-f111-8fcb-000d3ab36606",
+              "name": "TeamName",
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "isExternalField": false,
+              "isHiddenField": false,
+              "fieldCategoryId": 0,
+              "isUnique": false,
+              "referenceType": "ManyToOne",
+              "sqlType": {
+                "name": "NVARCHAR",
+                "lengthLimit": 200
+              },
+              "isRequired": false,
+              "isEncrypted": false,
+              "displayName": "TeamName",
+              "createTime": "2026-06-19T17:19:28.227Z",
+              "updateTime": "2026-06-19T17:19:28.227Z",
+              "isSystemField": false,
+              "isAttachment": false,
+              "isRbacEnabled": false,
+              "isModelReserved": false
+            }
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "UNIQUEIDENTIFIER",
+            "lengthLimit": 300
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "TeamId",
+          "description": "",
+          "createTime": "2026-06-19T17:45:48.533Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-22T18:00:45.433Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "fieldDisplayType": "Relationship",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "631e0eaf-066c-f111-8fcb-000d3ab36606",
+          "name": "PlayerName",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "NVARCHAR",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "PlayerName",
+          "description": "",
+          "createTime": "2026-06-19T17:45:48.58Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T17:45:48.58Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "651e0eaf-066c-f111-8fcb-000d3ab36606",
+          "name": "SelectedPosition",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "DefaultPosition",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "65aa05ef-056c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "SelectedPosition",
+          "description": "",
+          "createTime": "2026-06-19T17:45:48.63Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T17:45:48.63Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "65aa05ef-056c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "661e0eaf-066c-f111-8fcb-000d3ab36606",
+          "name": "SquadRole",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "SquadRole",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "4c130055-066c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "SquadRole",
+          "description": "",
+          "createTime": "2026-06-19T17:45:48.66Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T17:45:48.66Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "4c130055-066c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "671e0eaf-066c-f111-8fcb-000d3ab36606",
+          "name": "FitnessScore",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "DECIMAL",
+            "lengthLimit": 1000,
+            "maxValue": 100,
+            "minValue": 0,
+            "decimalPrecision": 0
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "FitnessScore",
+          "description": "",
+          "createTime": "2026-06-19T17:45:48.687Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T17:45:48.687Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "681e0eaf-066c-f111-8fcb-000d3ab36606",
+          "name": "AttackScore",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "DECIMAL",
+            "lengthLimit": 1000,
+            "maxValue": 100,
+            "minValue": 0,
+            "decimalPrecision": 0
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "AttackScore",
+          "description": "",
+          "createTime": "2026-06-19T17:45:48.71Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T17:45:48.71Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "691e0eaf-066c-f111-8fcb-000d3ab36606",
+          "name": "DefenseScore",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "DECIMAL",
+            "lengthLimit": 1000,
+            "maxValue": 100,
+            "minValue": 0,
+            "decimalPrecision": 0
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "DefenseScore",
+          "description": "",
+          "createTime": "2026-06-19T17:45:48.72Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T17:45:48.72Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "6a1e0eaf-066c-f111-8fcb-000d3ab36606",
+          "name": "AvailabilityStatus",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "AvailabilityStatus",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "9d97d0a2-066c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "AvailabilityStatus",
+          "description": "",
+          "createTime": "2026-06-19T17:45:48.74Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T17:45:48.74Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "9d97d0a2-066c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "df2f9e1b-986d-f111-8fcb-000d3ab36606",
+          "name": "DefaultPosition",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "DefaultPosition",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "65aa05ef-056c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "DefaultPosition",
+          "description": "",
+          "createTime": "2026-06-21T17:39:11.7Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-21T17:39:11.7Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "65aa05ef-056c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        }
+      ],
+      "recordCount": 0,
+      "isRbacEnabled": false,
+      "isInsightsEnabled": false,
+      "invalidIdentifiers": [],
+      "isModelReserved": false,
+      "id": "571e0eaf-066c-f111-8fcb-000d3ab36606",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-19T17:45:48.443Z",
+      "updateTime": "2026-06-25T20:46:52.173Z",
+      "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c"
+    },
+    {
+      "name": "PlayerImage",
+      "displayName": "PlayerImage",
+      "entityTypeId": 0,
+      "entityType": "Entity",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "fields": [
+        {
+          "id": "52722d9a-4d6f-f111-ac9b-000d3a68f6f7",
+          "name": "PlayerName",
+          "isPrimaryKey": false,
+          "isForeignKey": true,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceName": "fk_PlayerName_996b41cc-9b95-4c57-9edf-c8874d298342",
+          "referenceEntity": {
+            "name": "Player",
+            "displayName": "Player",
+            "entityTypeId": 0,
+            "entityType": "Entity",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "571e0eaf-066c-f111-8fcb-000d3ab36606"
+          },
+          "referenceField": {
+            "id": "631e0eaf-066c-f111-8fcb-000d3ab36606",
+            "definition": {
+              "id": "631e0eaf-066c-f111-8fcb-000d3ab36606",
+              "name": "PlayerName",
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "isExternalField": false,
+              "isHiddenField": false,
+              "fieldCategoryId": 0,
+              "isUnique": false,
+              "referenceType": "ManyToOne",
+              "sqlType": {
+                "name": "NVARCHAR",
+                "lengthLimit": 200
+              },
+              "isRequired": false,
+              "isEncrypted": false,
+              "displayName": "PlayerName",
+              "createTime": "2026-06-19T17:45:48.58Z",
+              "updateTime": "2026-06-19T17:45:48.58Z",
+              "isSystemField": false,
+              "isAttachment": false,
+              "isRbacEnabled": false,
+              "isModelReserved": false
+            }
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "UNIQUEIDENTIFIER",
+            "lengthLimit": 300
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "PlayerName",
+          "description": "",
+          "createTime": "2026-06-23T21:50:52.64Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-23T21:50:52.64Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "Relationship",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "54722d9a-4d6f-f111-ac9b-000d3a68f6f7",
+          "name": "PlayerImg",
+          "isPrimaryKey": false,
+          "isForeignKey": true,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceName": "fk_PlayerImg_fa70fc57-f58d-4360-85e7-45c0ec1d6ccb",
+          "referenceEntity": {
+            "name": "EntityAttachment",
+            "displayName": "EntityAttachment",
+            "entityTypeId": 2,
+            "entityType": "InternalEntity",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "079d85be-0b6c-f111-8fcb-000d3ab36606"
+          },
+          "referenceField": {
+            "id": "4376cc40-2711-4852-b738-51ff4167a13f",
+            "definition": {
+              "id": "4376cc40-2711-4852-b738-51ff4167a13f",
+              "name": "Name",
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "isExternalField": false,
+              "isHiddenField": false,
+              "fieldCategoryId": 0,
+              "isUnique": false,
+              "referenceType": "ManyToOne",
+              "sqlType": {
+                "name": "NVARCHAR",
+                "lengthLimit": 4000
+              },
+              "isRequired": false,
+              "isEncrypted": false,
+              "displayName": "Name",
+              "createTime": "2026-06-19T18:21:55.95Z",
+              "updateTime": "2026-06-19T18:21:55.95Z",
+              "isSystemField": false,
+              "isAttachment": false,
+              "isRbacEnabled": false,
+              "isModelReserved": false
+            }
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "UNIQUEIDENTIFIER"
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "PlayerImage",
+          "description": "",
+          "createTime": "2026-06-23T21:50:52.683Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-23T21:50:52.683Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "File",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        }
+      ],
+      "recordCount": 0,
+      "isRbacEnabled": false,
+      "isInsightsEnabled": false,
+      "invalidIdentifiers": [],
+      "isModelReserved": false,
+      "id": "48722d9a-4d6f-f111-ac9b-000d3a68f6f7",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-23T21:50:52.503Z",
+      "updateTime": "2026-06-23T21:50:52.683Z",
+      "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3"
+    },
+    {
+      "name": "TacticalPlan",
+      "displayName": "TacticalPlan",
+      "entityTypeId": 0,
+      "entityType": "Entity",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "fields": [
+        {
+          "id": "0b322f67-056c-f111-8fcb-000d3ab36606",
+          "name": "RecommendedFormation",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "Formation",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "ade87a93-036c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "RecommendedFormation",
+          "description": "",
+          "createTime": "2026-06-19T17:36:29.77Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T17:36:29.77Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "ade87a93-036c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "0c322f67-056c-f111-8fcb-000d3ab36606",
+          "name": "GameModel",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "GameModel",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "da510e10-056c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "GameModel",
+          "description": "",
+          "createTime": "2026-06-19T17:36:29.783Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T17:36:29.783Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "da510e10-056c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "0d322f67-056c-f111-8fcb-000d3ab36606",
+          "name": "OffensivePlan",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "MULTILINE",
+            "lengthLimit": 400
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "OffensivePlan",
+          "description": "",
+          "createTime": "2026-06-19T17:36:29.793Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-23T18:50:28.003Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "0e322f67-056c-f111-8fcb-000d3ab36606",
+          "name": "DefensivePlan",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "MULTILINE",
+            "lengthLimit": 400
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "DefensivePlan",
+          "description": "",
+          "createTime": "2026-06-19T17:36:29.803Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-23T18:50:28.05Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "0f322f67-056c-f111-8fcb-000d3ab36606",
+          "name": "PressingPlan",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "MULTILINE",
+            "lengthLimit": 400
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "PressingPlan",
+          "description": "",
+          "createTime": "2026-06-19T17:36:29.81Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-23T18:50:28.073Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "10322f67-056c-f111-8fcb-000d3ab36606",
+          "name": "SubstitutionPlan",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "MULTILINE",
+            "lengthLimit": 400
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "SubstitutionPlan",
+          "description": "",
+          "createTime": "2026-06-19T17:36:29.82Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-23T18:50:28.09Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "11322f67-056c-f111-8fcb-000d3ab36606",
+          "name": "KeyRisks",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "MULTILINE",
+            "lengthLimit": 400
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "KeyRisks",
+          "description": "",
+          "createTime": "2026-06-19T17:36:29.83Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-23T18:50:28.113Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "12322f67-056c-f111-8fcb-000d3ab36606",
+          "name": "TacticalScore",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "DECIMAL",
+            "lengthLimit": 1000,
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000,
+            "decimalPrecision": 2
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "TacticalScore",
+          "description": "",
+          "createTime": "2026-06-19T17:36:29.84Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T17:36:29.84Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "13322f67-056c-f111-8fcb-000d3ab36606",
+          "name": "PlanStatus",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "PlanStatus",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "b496ad5a-056c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "PlanStatus",
+          "description": "",
+          "createTime": "2026-06-19T17:36:29.847Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T17:36:29.847Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "b496ad5a-056c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "785c0d3d-096c-f111-8fcb-000d3ab36606",
+          "name": "MatchId",
+          "isPrimaryKey": false,
+          "isForeignKey": true,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceName": "fk_MatchId_ad050c65-1118-430d-88d5-aeaecd246108",
+          "referenceEntity": {
+            "name": "Match",
+            "displayName": "Match",
+            "entityTypeId": 0,
+            "entityType": "Entity",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "a95e049a-076c-f111-8fcb-000d3ab36606"
+          },
+          "referenceField": {
+            "id": "d4def600-c582-40fd-8079-93eef089acc5",
+            "definition": {
+              "id": "d4def600-c582-40fd-8079-93eef089acc5",
+              "name": "Id",
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "isExternalField": false,
+              "isHiddenField": false,
+              "fieldCategoryId": 0,
+              "isUnique": false,
+              "referenceType": "ManyToOne",
+              "sqlType": {
+                "name": "UNIQUEIDENTIFIER"
+              },
+              "isRequired": false,
+              "isEncrypted": false,
+              "displayName": "Id",
+              "createTime": "2026-06-19T17:52:23.143Z",
+              "updateTime": "2026-06-19T17:52:23.143Z",
+              "isSystemField": false,
+              "isAttachment": false,
+              "isRbacEnabled": false,
+              "isModelReserved": false
+            }
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "UNIQUEIDENTIFIER",
+            "lengthLimit": 300
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "MatchId",
+          "description": "",
+          "createTime": "2026-06-19T18:03:56.997Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T18:03:56.997Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "fieldDisplayType": "Relationship",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "7a5c0d3d-096c-f111-8fcb-000d3ab36606",
+          "name": "OpponentAnalysisId",
+          "isPrimaryKey": false,
+          "isForeignKey": true,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceName": "fk_OpponentAnalysisId_6257bd45-35c5-4bd5-8b89-a02677a73f27",
+          "referenceEntity": {
+            "name": "OpponentAnalysis",
+            "displayName": "OpponentAnalysis",
+            "entityTypeId": 0,
+            "entityType": "Entity",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "d5dd27b7-046c-f111-8fcb-000d3ab36606"
+          },
+          "referenceField": {
+            "id": "4a296079-f384-4798-be25-1f9f36cc0d6e",
+            "definition": {
+              "id": "4a296079-f384-4798-be25-1f9f36cc0d6e",
+              "name": "Id",
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "isExternalField": false,
+              "isHiddenField": false,
+              "fieldCategoryId": 0,
+              "isUnique": false,
+              "referenceType": "ManyToOne",
+              "sqlType": {
+                "name": "UNIQUEIDENTIFIER"
+              },
+              "isRequired": false,
+              "isEncrypted": false,
+              "displayName": "Id",
+              "createTime": "2026-06-19T17:31:35.55Z",
+              "updateTime": "2026-06-19T17:31:35.55Z",
+              "isSystemField": false,
+              "isAttachment": false,
+              "isRbacEnabled": false,
+              "isModelReserved": false
+            }
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "UNIQUEIDENTIFIER",
+            "lengthLimit": 300
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "OpponentAnalysisId",
+          "description": "",
+          "createTime": "2026-06-19T18:03:57.043Z",
+          "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "updateTime": "2026-06-19T18:03:57.043Z",
+          "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+          "isSystemField": false,
+          "fieldDisplayType": "Relationship",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        }
+      ],
+      "recordCount": 0,
+      "isRbacEnabled": false,
+      "isInsightsEnabled": false,
+      "invalidIdentifiers": [],
+      "isModelReserved": false,
+      "id": "01322f67-056c-f111-8fcb-000d3ab36606",
+      "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "createTime": "2026-06-19T17:36:29.697Z",
+      "updateTime": "2026-06-23T20:22:30.23Z",
+      "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c"
+    },
+    {
+      "name": "TeamEntity",
+      "displayName": "Team",
+      "entityTypeId": 0,
+      "entityType": "Entity",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "fields": [
+        {
+          "id": "6ff63e06-036c-f111-8fcb-000d3ab36606",
+          "name": "TeamName",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "NVARCHAR",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "TeamName",
+          "description": "",
+          "createTime": "2026-06-19T17:19:28.227Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T17:19:28.227Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "d3dd27b7-046c-f111-8fcb-000d3ab36606",
+          "name": "TeamType",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "TeamTypeChoices",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "8513f7b1-036c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "TeamType",
+          "description": "",
+          "createTime": "2026-06-19T17:31:34.37Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T17:31:34.37Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "8513f7b1-036c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "d4dd27b7-046c-f111-8fcb-000d3ab36606",
+          "name": "League",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "NVARCHAR",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "League",
+          "description": "",
+          "createTime": "2026-06-19T17:31:34.397Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T17:31:34.397Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "84b6f1cc-046c-f111-8fcb-000d3ab36606",
+          "name": "DefaultFormation",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "Formation",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "ade87a93-036c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "DefaultFormation",
+          "description": "",
+          "createTime": "2026-06-19T17:32:10.923Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T17:32:10.923Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "ade87a93-036c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "85b6f1cc-046c-f111-8fcb-000d3ab36606",
+          "name": "PlayingStyle",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "PlayingStyle",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "53f41a5e-046c-f111-8fcb-000d3ab36606"
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "PlayingStyle",
+          "description": "",
+          "createTime": "2026-06-19T17:32:10.94Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T17:32:10.94Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "choiceSetId": "53f41a5e-046c-f111-8fcb-000d3ab36606",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "id": "149d85be-0b6c-f111-8fcb-000d3ab36606",
+          "name": "TeamImage",
+          "isPrimaryKey": false,
+          "isForeignKey": true,
+          "isExternalField": false,
+          "isHiddenField": false,
+          "fieldCategoryId": 0,
+          "isUnique": false,
+          "referenceName": "fk_TeamImage_6589fd7b-f79b-43b2-b6a4-c43f7f495c0d",
+          "referenceEntity": {
+            "name": "EntityAttachment",
+            "displayName": "EntityAttachment",
+            "entityTypeId": 2,
+            "entityType": "InternalEntity",
+            "folderId": "00000000-0000-0000-0000-000000000000",
+            "isRbacEnabled": false,
+            "isInsightsEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false,
+            "id": "079d85be-0b6c-f111-8fcb-000d3ab36606"
+          },
+          "referenceField": {
+            "id": "4376cc40-2711-4852-b738-51ff4167a13f",
+            "definition": {
+              "id": "4376cc40-2711-4852-b738-51ff4167a13f",
+              "name": "Name",
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "isExternalField": false,
+              "isHiddenField": false,
+              "fieldCategoryId": 0,
+              "isUnique": false,
+              "referenceType": "ManyToOne",
+              "sqlType": {
+                "name": "NVARCHAR",
+                "lengthLimit": 4000
+              },
+              "isRequired": false,
+              "isEncrypted": false,
+              "displayName": "Name",
+              "createTime": "2026-06-19T18:21:55.95Z",
+              "updateTime": "2026-06-19T18:21:55.95Z",
+              "isSystemField": false,
+              "isAttachment": false,
+              "isRbacEnabled": false,
+              "isModelReserved": false
+            }
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "UNIQUEIDENTIFIER"
+          },
+          "isRequired": false,
+          "isEncrypted": false,
+          "displayName": "TeamImage",
+          "description": "",
+          "createTime": "2026-06-19T18:21:56.017Z",
+          "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "updateTime": "2026-06-19T18:21:56.017Z",
+          "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+          "isSystemField": false,
+          "fieldDisplayType": "File",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        }
+      ],
+      "recordCount": 0,
+      "isRbacEnabled": false,
+      "isInsightsEnabled": false,
+      "invalidIdentifiers": [],
+      "isModelReserved": false,
+      "id": "64f63e06-036c-f111-8fcb-000d3ab36606",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-19T17:19:28.067Z",
+      "updateTime": "2026-06-23T20:22:30.23Z",
+      "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c"
+    }
+  ],
+  "choicesets": [
+    {
+      "id": "113eefde-036c-f111-8fcb-000d3ab36606",
+      "name": "AttackFocus",
+      "displayName": "AttackFocus",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "createTime": "2026-06-19T17:25:31.61Z",
+      "updateTime": "2026-06-19T17:25:32.017Z",
+      "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Center",
+          "Name": "Center",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Left Wing",
+          "Name": "LeftWing",
+          "NumberId": 1
+        },
+        {
+          "DisplayName": "Mixed",
+          "Name": "Mixed",
+          "NumberId": 2
+        },
+        {
+          "DisplayName": "Right Wing",
+          "Name": "RightWing",
+          "NumberId": 3
+        }
+      ]
+    },
+    {
+      "id": "9d97d0a2-066c-f111-8fcb-000d3ab36606",
+      "name": "AvailabilityStatus",
+      "displayName": "AvailabilityStatus",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-19T17:45:28.533Z",
+      "updateTime": "2026-06-19T17:45:28.913Z",
+      "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Available",
+          "Name": "Available",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Doubtful",
+          "Name": "Doubtful",
+          "NumberId": 3
+        },
+        {
+          "DisplayName": "Injured",
+          "Name": "Injured",
+          "NumberId": 2
+        },
+        {
+          "DisplayName": "Suspended",
+          "Name": "Suspended",
+          "NumberId": 1
+        }
+      ]
+    },
+    {
+      "id": "65aa05ef-056c-f111-8fcb-000d3ab36606",
+      "name": "DefaultPosition",
+      "displayName": "DefaultPosition",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-19T17:40:17.593Z",
+      "updateTime": "2026-06-25T20:46:52.14Z",
+      "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "None",
+          "Name": "None",
+          "NumberId": 15
+        },
+        {
+          "DisplayName": "p_AM",
+          "Name": "pAM",
+          "NumberId": 3
+        },
+        {
+          "DisplayName": "p_CB",
+          "Name": "pCB",
+          "NumberId": 6
+        },
+        {
+          "DisplayName": "p_CM",
+          "Name": "pCM",
+          "NumberId": 8
+        },
+        {
+          "DisplayName": "p_DM",
+          "Name": "pDM",
+          "NumberId": 5
+        },
+        {
+          "DisplayName": "p_GK",
+          "Name": "pGK",
+          "NumberId": 7
+        },
+        {
+          "DisplayName": "p_LB",
+          "Name": "pLB",
+          "NumberId": 10
+        },
+        {
+          "DisplayName": "p_LM",
+          "Name": "pLM",
+          "NumberId": 14
+        },
+        {
+          "DisplayName": "p_LW",
+          "Name": "pLW",
+          "NumberId": 13
+        },
+        {
+          "DisplayName": "p_RB",
+          "Name": "pRB",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "p_RM",
+          "Name": "pRM",
+          "NumberId": 11
+        },
+        {
+          "DisplayName": "p_RW",
+          "Name": "pRW",
+          "NumberId": 12
+        },
+        {
+          "DisplayName": "p_ST",
+          "Name": "pST",
+          "NumberId": 9
+        }
+      ]
+    },
+    {
+      "id": "ade87a93-036c-f111-8fcb-000d3ab36606",
+      "name": "Formation",
+      "displayName": "Formation",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "createTime": "2026-06-19T17:23:25.02Z",
+      "updateTime": "2026-06-23T20:22:29.75Z",
+      "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "3-4-3",
+          "Name": "A343",
+          "NumberId": 3
+        },
+        {
+          "DisplayName": "3-5-2",
+          "Name": "A352",
+          "NumberId": 2
+        },
+        {
+          "DisplayName": "4-1-2-1-2",
+          "Name": "A41212",
+          "NumberId": 7
+        },
+        {
+          "DisplayName": "4-1-4-1",
+          "Name": "A4141",
+          "NumberId": 8
+        },
+        {
+          "DisplayName": "4-2-3-1",
+          "Name": "A4231",
+          "NumberId": 4
+        },
+        {
+          "DisplayName": "4-3-1-2",
+          "Name": "A4312",
+          "NumberId": 10
+        },
+        {
+          "DisplayName": "4-3-2-1",
+          "Name": "A4321",
+          "NumberId": 6
+        },
+        {
+          "DisplayName": "4-3-3",
+          "Name": "A433",
+          "NumberId": 1
+        },
+        {
+          "DisplayName": "4-4-1-1",
+          "Name": "A4411",
+          "NumberId": 5
+        },
+        {
+          "DisplayName": "4-4-2",
+          "Name": "A442",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "4-5-1",
+          "Name": "A451",
+          "NumberId": 9
+        }
+      ]
+    },
+    {
+      "id": "da510e10-056c-f111-8fcb-000d3ab36606",
+      "name": "GameModel",
+      "displayName": "GameModel",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "createTime": "2026-06-19T17:34:03.517Z",
+      "updateTime": "2026-06-19T17:34:03.93Z",
+      "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Counter Attack",
+          "Name": "CounterAttack",
+          "NumberId": 4
+        },
+        {
+          "DisplayName": "High Press",
+          "Name": "HighPress",
+          "NumberId": 3
+        },
+        {
+          "DisplayName": "Low Block",
+          "Name": "LowBlock",
+          "NumberId": 1
+        },
+        {
+          "DisplayName": "Mid Block",
+          "Name": "MidBlock",
+          "NumberId": 2
+        },
+        {
+          "DisplayName": "Possession",
+          "Name": "Possession",
+          "NumberId": 0
+        }
+      ]
+    },
+    {
+      "id": "a6a2b673-076c-f111-8fcb-000d3ab36606",
+      "name": "MatchObjective",
+      "displayName": "MatchObjective",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-19T17:51:18.98Z",
+      "updateTime": "2026-06-19T17:51:19.417Z",
+      "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Balanced",
+          "Name": "Balanced",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Defensive Priority",
+          "Name": "DefensivePriority",
+          "NumberId": 3
+        },
+        {
+          "DisplayName": "Draw Enough",
+          "Name": "DrawEnough",
+          "NumberId": 4
+        },
+        {
+          "DisplayName": "Must Win",
+          "Name": "MustWin",
+          "NumberId": 1
+        },
+        {
+          "DisplayName": "Rotation",
+          "Name": "Rotation",
+          "NumberId": 2
+        }
+      ]
+    },
+    {
+      "id": "9c5e049a-076c-f111-8fcb-000d3ab36606",
+      "name": "MatchStatus",
+      "displayName": "MatchStatus",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-19T17:52:13.973Z",
+      "updateTime": "2026-06-19T17:52:14.4Z",
+      "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Analysis Completed",
+          "Name": "AnalysisCompleted",
+          "NumberId": 3
+        },
+        {
+          "DisplayName": "Approved",
+          "Name": "Approved",
+          "NumberId": 1
+        },
+        {
+          "DisplayName": "Completed",
+          "Name": "Completed",
+          "NumberId": 4
+        },
+        {
+          "DisplayName": "Preparation",
+          "Name": "Preparation",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Tactic Generated",
+          "Name": "TacticGenerated",
+          "NumberId": 2
+        }
+      ]
+    },
+    {
+      "id": "223d8bfb-146c-f111-8fcb-000d3ab36606",
+      "name": "PitchConditionChoices",
+      "displayName": "PitchConditionChoices",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-19T19:28:10.1Z",
+      "updateTime": "2026-06-19T19:28:10.457Z",
+      "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Average",
+          "Name": "Average",
+          "NumberId": 2
+        },
+        {
+          "DisplayName": "Good",
+          "Name": "Good",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Poor",
+          "Name": "Poor",
+          "NumberId": 1
+        }
+      ]
+    },
+    {
+      "id": "b496ad5a-056c-f111-8fcb-000d3ab36606",
+      "name": "PlanStatus",
+      "displayName": "PlanStatus",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "createTime": "2026-06-19T17:36:08.713Z",
+      "updateTime": "2026-06-19T17:36:09.487Z",
+      "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Approved",
+          "Name": "Approved",
+          "NumberId": 1
+        },
+        {
+          "DisplayName": "Coach Review",
+          "Name": "CoachReview",
+          "NumberId": 3
+        },
+        {
+          "DisplayName": "Generated",
+          "Name": "Generated",
+          "NumberId": 4
+        },
+        {
+          "DisplayName": "Rejected",
+          "Name": "Rejected",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Revised",
+          "Name": "Revised",
+          "NumberId": 2
+        }
+      ]
+    },
+    {
+      "id": "53f41a5e-046c-f111-8fcb-000d3ab36606",
+      "name": "PlayingStyle",
+      "displayName": "Playing Style",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-19T17:29:05.073Z",
+      "updateTime": "2026-06-19T17:29:05.49Z",
+      "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Balanced",
+          "Name": "Balanced",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Counter Attack",
+          "Name": "CounterAttack",
+          "NumberId": 1
+        },
+        {
+          "DisplayName": "High Press",
+          "Name": "HighPress",
+          "NumberId": 2
+        },
+        {
+          "DisplayName": "Possession",
+          "Name": "Possession",
+          "NumberId": 3
+        }
+      ]
+    },
+    {
+      "id": "e4b38f09-046c-f111-8fcb-000d3ab36606",
+      "name": "PressingLevel",
+      "displayName": "PressingLevel",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "createTime": "2026-06-19T17:26:43.123Z",
+      "updateTime": "2026-06-19T17:26:43.58Z",
+      "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "High",
+          "Name": "High",
+          "NumberId": 2
+        },
+        {
+          "DisplayName": "Low",
+          "Name": "Low",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Medium",
+          "Name": "Medium",
+          "NumberId": 1
+        }
+      ]
+    },
+    {
+      "id": "9213f7b1-036c-f111-8fcb-000d3ab36606",
+      "name": "Result",
+      "displayName": "Result",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "createTime": "2026-06-19T17:24:20.473Z",
+      "updateTime": "2026-06-19T17:24:20.92Z",
+      "updatedBy": "41cf4293-6686-4501-afa2-27516c98c66c",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Draw",
+          "Name": "Draw",
+          "NumberId": 1
+        },
+        {
+          "DisplayName": "Loss",
+          "Name": "Loss",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Win",
+          "Name": "Win",
+          "NumberId": 2
+        }
+      ]
+    },
+    {
+      "id": "4c130055-066c-f111-8fcb-000d3ab36606",
+      "name": "SquadRole",
+      "displayName": "SquadRole",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-19T17:43:16.353Z",
+      "updateTime": "2026-06-19T17:43:16.93Z",
+      "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Bench",
+          "Name": "Bench",
+          "NumberId": 1
+        },
+        {
+          "DisplayName": "Not Selected",
+          "Name": "NotSelected",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Starting XI",
+          "Name": "StartingXI",
+          "NumberId": 2
+        }
+      ]
+    },
+    {
+      "id": "8513f7b1-036c-f111-8fcb-000d3ab36606",
+      "name": "TeamTypeChoices",
+      "displayName": "TeamTypeChoices",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-19T17:24:16.163Z",
+      "updateTime": "2026-06-19T17:24:20.76Z",
+      "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Opponent",
+          "Name": "Opponent",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Our Team",
+          "Name": "OurTeam",
+          "NumberId": 1
+        }
+      ]
+    },
+    {
+      "id": "b446061d-076c-f111-8fcb-000d3ab36606",
+      "name": "Venue",
+      "displayName": "Venue",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-19T17:48:44.27Z",
+      "updateTime": "2026-06-19T17:53:13.783Z",
+      "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Away",
+          "Name": "Away",
+          "NumberId": 1
+        },
+        {
+          "DisplayName": "Home",
+          "Name": "Home",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Neutral",
+          "Name": "Neutral",
+          "NumberId": 2
+        }
+      ]
+    },
+    {
+      "id": "6e5220d8-146c-f111-8fcb-000d3ab36606",
+      "name": "WeatherCondition",
+      "displayName": "WeatherCondition",
+      "description": "",
+      "folderId": "00000000-0000-0000-0000-000000000000",
+      "createdBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "createTime": "2026-06-19T19:27:01.633Z",
+      "updateTime": "2026-06-19T19:27:02.18Z",
+      "updatedBy": "bba99b20-03b6-4008-ac06-3904cc40a1f3",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Clear",
+          "Name": "Clear",
+          "NumberId": 2
+        },
+        {
+          "DisplayName": "Cold",
+          "Name": "Cold",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Hot",
+          "Name": "Hot",
+          "NumberId": 4
+        },
+        {
+          "DisplayName": "Rainy",
+          "Name": "Rainy",
+          "NumberId": 1
+        },
+        {
+          "DisplayName": "Windy",
+          "Name": "Windy",
+          "NumberId": 3
+        }
+      ]
+    }
+  ]
+}
